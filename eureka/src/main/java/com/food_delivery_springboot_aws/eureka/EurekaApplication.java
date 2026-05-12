@@ -1,4 +1,4 @@
-package com.biteflow_springboot_aws.eureka;
+package com.food_delivery_springboot_aws.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

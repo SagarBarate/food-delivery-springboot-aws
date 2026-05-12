@@ -3,9 +3,6 @@ spring:
     name: eureka
 
 server:
-  port:8761
+  port: 8761
 
-eureka:
-  client:
-    fetch-registry:false
-    registry-with-eureka:false
+eureka: { client: { register-with-eureka: false, fetch-registry: false } }

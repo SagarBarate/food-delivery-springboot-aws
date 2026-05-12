@@ -1,4 +1,4 @@
-package com.biteflow_springboot_aws.eureka;
+package com.food_delivery_springboot_aws.eureka;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,5 +9,4 @@ class EurekaApplicationTests {
 	@Test
 	void contextLoads() {
 	}
-
 }

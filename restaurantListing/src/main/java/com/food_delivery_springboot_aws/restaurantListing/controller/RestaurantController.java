@@ -26,9 +26,9 @@ public class RestaurantController {
         return new ResponseEntity<>(allRestaurants, HttpStatusCode.valueOf(HttpStatus.SC_OK));
     }
 
-    @PostMapping("/addRestaurant")
+    @PostMapping("/addRestaurant")//fixed this earlier
     public ResponseEntity<RestaurantDTO> saveRestaurant(@RequestBody RestaurantDTO restaurantDTO) {
-        RestaurantDTO restaurantAdded = restaurantService.addRestaurantInDB(restaurantDTO);
+        RestaurantDTO restaurantAdded = restaurantService.addRestaurantInDB(restaurantDTO);//fixed restaurant DTO also for api endpoint issue
         return new ResponseEntity<>(restaurantAdded, HttpStatusCode.valueOf(HttpStatus.SC_CREATED));
     }
 

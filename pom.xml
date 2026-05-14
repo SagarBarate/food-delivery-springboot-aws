@@ -14,5 +14,6 @@
 	<modules>
 		<module>eureka</module>
 		<module>restaurantListing</module>
+		<module>userInfo</module>
 	</modules>
 </project>

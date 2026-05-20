@@ -10,4 +10,5 @@ public interface RestaurantMapper {
     RestaurantMapper INSTANCE = Mappers.getMapper(RestaurantMapper.class);
     Restaurant mapRestaurantDTOToRestaurant(RestaurantDTO restaurantDTO);
     RestaurantDTO mapRestaurantToRestaurantDTO(Restaurant restaurant);
+
 }

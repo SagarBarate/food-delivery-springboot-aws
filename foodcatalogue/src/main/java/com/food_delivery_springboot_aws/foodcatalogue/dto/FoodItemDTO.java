@@ -1,26 +1,18 @@
-package com.food_delivery_springboot_aws.foodcatalogue.entity;
+package com.food_delivery_springboot_aws.foodcatalogue.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@Entity
-@NoArgsConstructor
 @AllArgsConstructor
-public class FoodItem {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+@NoArgsConstructor
+public class FoodItemDTO {
     private Long id;
     private String itemName;
     private String itemDescription;
     private boolean isVeg;
     private String price;
     private Integer restaurantId;
-
-    @Column(nullable = false, columnDefinition = "INT DEFAULT 0")
     private Integer quantity;
-
-
 }

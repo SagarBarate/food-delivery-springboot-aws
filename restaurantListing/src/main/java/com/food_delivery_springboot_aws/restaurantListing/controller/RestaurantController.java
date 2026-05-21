@@ -32,7 +32,7 @@ public class RestaurantController {
         return new ResponseEntity<>(restaurantAdded, HttpStatusCode.valueOf(HttpStatus.SC_CREATED));
     }
 
-    @GetMapping("fetchById/{id}")
+    @GetMapping("/fetchById/{id}")
     public ResponseEntity<RestaurantDTO> fetchRestaurantById(@PathVariable Long id) {
         return restaurantService.fetchRestaurantById(Math.toIntExact(id));
     }

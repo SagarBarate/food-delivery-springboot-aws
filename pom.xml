@@ -16,5 +16,6 @@
 		<module>restaurantListing</module>
 		<module>userInfo</module>
 		<module>foodcatalogue</module>
+		<module>OrderMS</module>
 	</modules>
 </project>
